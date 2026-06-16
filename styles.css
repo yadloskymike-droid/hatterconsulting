@@ -581,6 +581,21 @@ ul {
   color: #ffffff;
 }
 
+.avatar--recruiting {
+  background: var(--border);
+  color: var(--text-muted);
+  border: 2px dashed var(--text-muted);
+}
+
+.team-card--recruiting {
+  border: 2px dashed var(--border);
+  opacity: 0.75;
+}
+
+.team-card--founder {
+  border-top: 3px solid var(--gold);
+}
+
 .team-name {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -626,6 +641,10 @@ ul {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.pillars-grid {
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -681,6 +700,11 @@ ul {
 .project-badge--marketing {
   background: #f3e8fa;
   color: #7b1ab8;
+}
+
+.project-badge--competition {
+  background: #fdf5e0;
+  color: #a07000;
 }
 
 .project-title {
