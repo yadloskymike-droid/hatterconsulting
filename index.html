@@ -1,0 +1,417 @@
+<!-- Replace placeholder content (names, photos, project details) with real info -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hatter Consulting | Stetson University</title>
+  <meta name="description" content="Hatter Consulting is Stetson University's first undergraduate consulting club, bridging classroom theory with real-world business challenges." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-name">Hatter Consulting</span>
+        <span class="brand-tagline">Stetson University</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#join" class="nav-link nav-link--cta">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Stetson University's First Undergraduate Consulting Club</p>
+        <h1 class="hero-headline">Where Hatters Solve<br />Real Problems.</h1>
+        <p class="hero-sub">We partner with local businesses and nonprofits to deliver data-driven solutions — and develop the next generation of business leaders along the way.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn--outline">Learn More</a>
+          <a href="#join" class="btn btn--gold">Apply Now</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-arrow"></span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / MISSION ===== -->
+    <section class="section section--white" id="about">
+      <div class="container">
+        <div class="section-label">About Us</div>
+        <h2 class="section-heading">Our Mission</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">Hatter Consulting was founded to bridge the gap between classroom theory and real-world business challenges.</p>
+            <p>We partner with local businesses and nonprofits to deliver data-driven solutions while developing the next generation of business leaders. Our members gain hands-on experience tackling complex problems across strategy, operations, marketing, and finance — all while making a tangible impact on the DeLand community.</p>
+            <p>Whether you're a first-year student eager to apply what you've learned, or a senior looking to build a portfolio that stands out, Hatter Consulting gives you the platform to grow.</p>
+          </div>
+
+          <div class="feature-cards">
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Strategy</h3>
+                <p class="feature-desc">Frame ambiguous problems, build structured analyses, and deliver clear, actionable recommendations to real clients.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Collaboration</h3>
+                <p class="feature-desc">Work alongside driven peers, faculty mentors, and community partners on cross-functional project teams.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Impact</h3>
+                <p class="feature-desc">Deliver solutions that genuinely move the needle for clients in DeLand and beyond — not just slide decks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-number">Est. 2024</span>
+            <span class="stat-label">Founded at Stetson</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="stat-consultants">20+</span>
+            <span class="stat-label">Student Consultants</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="stat-projects">5+</span>
+            <span class="stat-label">Client Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEAM / LEADERSHIP ===== -->
+    <section class="section section--tint" id="team">
+      <div class="container">
+        <div class="section-label">Leadership</div>
+        <h2 class="section-heading">Our Team</h2>
+        <p class="section-sub">Meet the students driving Hatter Consulting forward.</p>
+
+        <div class="team-grid">
+
+          <div class="team-card">
+            <div class="avatar avatar--green">AR</div>
+            <h3 class="team-name">Alex Rivera</h3>
+            <p class="team-title">President</p>
+            <a href="#" class="linkedin-link" aria-label="Alex Rivera on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar avatar--green">JC</div>
+            <h3 class="team-name">Jordan Chen</h3>
+            <p class="team-title">Vice President</p>
+            <a href="#" class="linkedin-link" aria-label="Jordan Chen on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar avatar--green">MS</div>
+            <h3 class="team-name">Morgan Shaw</h3>
+            <p class="team-title">Director of Projects</p>
+            <a href="#" class="linkedin-link" aria-label="Morgan Shaw on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar avatar--green">TP</div>
+            <h3 class="team-name">Taylor Park</h3>
+            <p class="team-title">Director of Recruitment</p>
+            <a href="#" class="linkedin-link" aria-label="Taylor Park on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar avatar--green">SL</div>
+            <h3 class="team-name">Sam Lee</h3>
+            <p class="team-title">Director of Marketing</p>
+            <a href="#" class="linkedin-link" aria-label="Sam Lee on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar avatar--green">CW</div>
+            <h3 class="team-name">Casey Williams</h3>
+            <p class="team-title">Director of Finance</p>
+            <a href="#" class="linkedin-link" aria-label="Casey Williams on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS / CASE STUDIES ===== -->
+    <section class="section section--white" id="projects">
+      <div class="container">
+        <div class="section-label">Case Studies</div>
+        <h2 class="section-heading">Our Work</h2>
+        <p class="section-sub">A sample of the real-world engagements Hatter Consulting has tackled.</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <span class="project-badge project-badge--strategy">Strategy</span>
+            <h3 class="project-title">Market Entry Strategy for a Local Startup</h3>
+            <p class="project-desc">Conducted competitive landscape analysis and customer segmentation to identify the most viable go-to-market path for a DeLand-based early-stage company.</p>
+            <a href="#" class="project-link">Read More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <span class="project-badge project-badge--operations">Operations</span>
+            <h3 class="project-title">Operations Audit for a DeLand Nonprofit</h3>
+            <p class="project-desc">Mapped end-to-end workflows, identified inefficiencies, and delivered a prioritized roadmap that reduced administrative overhead by an estimated 20%.</p>
+            <a href="#" class="project-link">Read More <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-accent"></div>
+            <span class="project-badge project-badge--marketing">Marketing</span>
+            <h3 class="project-title">Brand Refresh for a Campus Organization</h3>
+            <p class="project-desc">Audited existing brand assets, defined a refreshed visual identity, and developed a social media playbook to improve reach and consistency.</p>
+            <a href="#" class="project-link">Read More <span aria-hidden="true">→</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== JOIN / APPLY ===== -->
+    <section class="section section--tint" id="join">
+      <div class="container">
+        <div class="section-label">Get Involved</div>
+        <h2 class="section-heading">Join Hatter Consulting</h2>
+
+        <div class="join-grid">
+
+          <div class="join-reasons">
+            <h3 class="join-sub-heading">Why Join?</h3>
+            <ul class="reasons-list">
+              <li class="reason-item">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Real Client Work</strong>
+                  <p>Engage with actual businesses and nonprofits — not simulated case studies. Your recommendations matter.</p>
+                </div>
+              </li>
+              <li class="reason-item">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Professional Development</strong>
+                  <p>Build skills in structured problem-solving, data analysis, slide design, and client communication.</p>
+                </div>
+              </li>
+              <li class="reason-item">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Alumni Network</strong>
+                  <p>Connect with Stetson alumni across consulting, finance, and entrepreneurship who are invested in your success.</p>
+                </div>
+              </li>
+              <li class="reason-item">
+                <span class="reason-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Leadership Opportunities</strong>
+                  <p>Take ownership of projects and club operations — we grow leaders, not just analysts.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="join-form-wrapper">
+            <h3 class="join-sub-heading">Express Your Interest</h3>
+            <form class="join-form" id="join-form" novalidate>
+
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Jane Doe" required autocomplete="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="jane.doe@stetson.edu" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="major" class="form-label">Major <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="major" name="major" class="form-input" placeholder="Business Administration" required />
+              </div>
+
+              <div class="form-group">
+                <label for="grad-year" class="form-label">Graduation Year <span class="required" aria-hidden="true">*</span></label>
+                <select id="grad-year" name="grad-year" class="form-select" required>
+                  <option value="" disabled selected>Select year</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="why-join" class="form-label">Why do you want to join Hatter Consulting? <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="why-join" name="why-join" class="form-textarea" rows="4" placeholder="Tell us about your interest in consulting and what you hope to contribute..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--green btn--full">Submit Application</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="footer-wordmark">Hatter Consulting</span>
+          <p class="footer-sub">Stetson University · DeLand, FL</p>
+          <p class="footer-tagline">Bridging classroom theory with real-world impact.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4 class="footer-nav-heading">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#team" class="footer-link">Team</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#join" class="footer-link">Join Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-connect">
+          <h4 class="footer-nav-heading">Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Hatter Consulting on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Hatter Consulting on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Hatter Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
