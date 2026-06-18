@@ -612,6 +612,64 @@ ul {
   opacity: 0.75;
 }
 
+/* Faculty Advisor Card */
+.faculty-advisor-card {
+  margin-top: 2rem;
+  padding: 1.75rem 2rem;
+  background: #ffffff;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  opacity: 0.85;
+}
+
+.faculty-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.faculty-avatar {
+  width: 56px;
+  height: 56px;
+  font-size: 0.85rem;
+}
+
+.recruiting-badge {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.65rem;
+  background: #fff8e8;
+  color: #a07000;
+  border: 1px solid #e8d080;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.faculty-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.faculty-desc a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .faculty-advisor-card {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
 .team-card--founder {
   border-top: 3px solid var(--gold);
 }
