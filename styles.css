@@ -203,15 +203,18 @@ ul {
 }
 
 .nav-logo {
-  height: 40px;
+  height: 44px;
   width: auto;
   flex-shrink: 0;
-  color: #ffffff;
-  transition: color var(--transition);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.92);
+  padding: 3px 6px;
+  transition: background var(--transition);
 }
 
 .site-header.scrolled .nav-logo {
-  color: var(--green);
+  background: transparent;
+  padding: 0;
 }
 
 .brand-text {
