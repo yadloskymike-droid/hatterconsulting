@@ -130,11 +130,11 @@ ul {
 
 .btn--outline {
   background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: var(--green);
+  color: var(--green);
 }
 .btn--outline:hover {
-  background: rgba(255,255,255,0.15);
+  background: var(--green-light);
   transform: translateY(-2px);
 }
 
@@ -176,6 +176,7 @@ ul {
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
+  background: #f7f7f7;
   transition: background var(--transition), box-shadow var(--transition);
 }
 
@@ -206,15 +207,6 @@ ul {
   height: 44px;
   width: auto;
   flex-shrink: 0;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.92);
-  padding: 3px 6px;
-  transition: background var(--transition);
-}
-
-.site-header.scrolled .nav-logo {
-  background: transparent;
-  padding: 0;
 }
 
 .brand-text {
@@ -227,11 +219,6 @@ ul {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #ffffff;
-  transition: color var(--transition);
-}
-
-.site-header.scrolled .brand-name {
   color: var(--green);
 }
 
@@ -241,11 +228,6 @@ ul {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
-  transition: color var(--transition);
-}
-
-.site-header.scrolled .brand-tagline {
   color: var(--text-muted);
 }
 
@@ -259,7 +241,7 @@ ul {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.9);
+  color: var(--text);
   padding: 0.45rem 0.85rem;
   border-radius: var(--radius);
   transition: color var(--transition), background var(--transition);
@@ -267,15 +249,6 @@ ul {
 }
 
 .nav-link:hover {
-  color: #ffffff;
-  background: rgba(255,255,255,0.12);
-}
-
-.site-header.scrolled .nav-link {
-  color: var(--text);
-}
-
-.site-header.scrolled .nav-link:hover {
   color: var(--green);
   background: var(--green-light);
 }
@@ -306,10 +279,6 @@ ul {
 }
 
 .hamburger:hover {
-  background: rgba(255,255,255,0.12);
-}
-
-.site-header.scrolled .hamburger:hover {
   background: var(--green-light);
 }
 
@@ -317,13 +286,9 @@ ul {
   display: block;
   width: 22px;
   height: 2px;
-  background: #ffffff;
-  border-radius: 2px;
-  transition: transform var(--transition), opacity var(--transition), background var(--transition);
-}
-
-.site-header.scrolled .bar {
   background: var(--text);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
 }
 
 .hamburger.open .bar:nth-child(1) {
@@ -345,13 +310,14 @@ ul {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(155deg, var(--green) 0%, var(--green-mid) 45%, #a8d5be 85%, #ffffff 100%);
+  background: #f7f7f7;
   overflow: hidden;
   padding: calc(var(--nav-height) + 2rem) 1.25rem 4rem;
   text-align: center;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Decorative background shapes */
+/* Subtle decorative circles */
 .hero::before {
   content: '';
   position: absolute;
@@ -359,7 +325,7 @@ ul {
   right: -5%;
   width: 480px;
   height: 480px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(0,103,71,0.04);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -371,7 +337,7 @@ ul {
   left: -6%;
   width: 360px;
   height: 360px;
-  background: rgba(0,69,48,0.25);
+  background: rgba(0,103,71,0.04);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -389,22 +355,21 @@ ul {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
+  color: var(--green);
   margin-bottom: 1.25rem;
 }
 
 .hero-headline {
   font-size: clamp(2.5rem, 6vw, 4.25rem);
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text);
   margin-bottom: 1.25rem;
   line-height: 1.1;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  color: rgba(255,255,255,0.88);
+  color: var(--text-muted);
   max-width: 560px;
   margin: 0 auto 2.5rem;
   line-height: 1.7;
@@ -430,7 +395,7 @@ ul {
   display: block;
   width: 24px;
   height: 24px;
-  border-right: 2px solid rgba(255,255,255,0.6);
+  border-right: 2px solid rgba(0,103,71,0.5);
   border-bottom: 2px solid rgba(255,255,255,0.6);
   transform: rotate(45deg);
   animation: bounce 1.6s infinite;
