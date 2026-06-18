@@ -17,20 +17,21 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   color: #1a1a1a;
   background-color: #ffffff;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
-  line-height: 1.2;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
 }
 
 img {
@@ -89,7 +90,7 @@ ul {
 }
 
 .section-label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -116,7 +117,7 @@ ul {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   border-radius: var(--radius);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
@@ -201,7 +202,7 @@ ul {
 }
 
 .brand-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #ffffff;
@@ -213,7 +214,7 @@ ul {
 }
 
 .brand-tagline {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -233,7 +234,7 @@ ul {
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.875rem;
   font-weight: 500;
   color: rgba(255,255,255,0.9);
@@ -361,7 +362,7 @@ ul {
 }
 
 .hero-eyebrow {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -484,7 +485,7 @@ ul {
 }
 
 .feature-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.925rem;
   font-weight: 700;
   color: var(--text);
@@ -521,7 +522,7 @@ ul {
 
 .stat-number {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: var(--green);
@@ -531,7 +532,7 @@ ul {
 
 .stat-label {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -569,7 +570,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -597,7 +598,7 @@ ul {
 }
 
 .team-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
@@ -605,7 +606,7 @@ ul {
 }
 
 .team-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -618,7 +619,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -679,7 +680,7 @@ ul {
   margin-top: 1.35rem;
   padding: 0.3rem 0.8rem;
   border-radius: 99px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -708,7 +709,7 @@ ul {
 }
 
 .project-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
@@ -726,7 +727,7 @@ ul {
 
 .project-link {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--green);
@@ -751,7 +752,7 @@ ul {
 }
 
 .join-sub-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--text);
@@ -790,7 +791,7 @@ ul {
 
 .reason-item strong {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text);
@@ -829,7 +830,7 @@ ul {
 }
 
 .form-label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.825rem;
   font-weight: 600;
   color: var(--text);
@@ -842,7 +843,7 @@ ul {
 .form-input,
 .form-select,
 .form-textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.9rem;
   color: var(--text);
   background: var(--off-white);
@@ -901,7 +902,7 @@ ul {
 
 .footer-wordmark {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff;
@@ -925,7 +926,7 @@ ul {
 }
 
 .footer-nav-heading {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
