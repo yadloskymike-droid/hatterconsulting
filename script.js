@@ -91,11 +91,47 @@
         return;
       }
 
-      // Show confirmation
-      alert('Thanks for your interest! We\'ll be in touch.');
+      const submitBtn = joinForm.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+      }
 
-      // Reset the form
-      joinForm.reset();
+      // Send to FormSubmit via its AJAX endpoint so the visitor stays
+      // on the page. The form's `action` attribute is the same address
+      // and acts as a no-JS fallback (native POST + redirect).
+      const endpoint = joinForm.getAttribute('action').replace(
+        'formsubmit.co/',
+        'formsubmit.co/ajax/'
+      );
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(joinForm)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data && (data.success === 'true' || data.success === true)) {
+            alert('Thanks for your interest! We\'ll be in touch.');
+            joinForm.reset();
+          } else {
+            // Most common case: the FormSubmit address hasn't been
+            // activated yet (first-time confirmation email pending).
+            alert('Thanks! Your submission was received. (If this is the club\'s first submission, an activation step may still be pending.)');
+            joinForm.reset();
+          }
+        })
+        .catch(function () {
+          alert('Sorry — something went wrong sending your application. Please email myadlosky@stetson.edu directly.');
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalLabel;
+          }
+        });
     });
   }
 

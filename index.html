@@ -305,11 +305,18 @@
 
           <div class="join-form-wrapper">
             <h3 class="join-sub-heading">Express Your Interest</h3>
-            <form class="join-form" id="join-form" novalidate>
+            <form class="join-form" id="join-form" action="https://formsubmit.co/myadlosky@stetson.edu" method="POST" novalidate>
+
+              <!-- FormSubmit configuration -->
+              <input type="hidden" name="_subject" value="New Hatter Consulting Interest Form Submission" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <!-- Honeypot: bots fill this, humans don't; FormSubmit drops those silently -->
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
               <div class="form-group">
                 <label for="full-name" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
-                <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Jane Doe" required autocomplete="name" />
+                <input type="text" id="full-name" name="Full Name" class="form-input" placeholder="Jane Doe" required autocomplete="name" />
               </div>
 
               <div class="form-group">
@@ -319,12 +326,12 @@
 
               <div class="form-group">
                 <label for="major" class="form-label">Major <span class="required" aria-hidden="true">*</span></label>
-                <input type="text" id="major" name="major" class="form-input" placeholder="Business Administration" required />
+                <input type="text" id="major" name="Major" class="form-input" placeholder="Business Administration" required />
               </div>
 
               <div class="form-group">
                 <label for="grad-year" class="form-label">Graduation Year <span class="required" aria-hidden="true">*</span></label>
-                <select id="grad-year" name="grad-year" class="form-select" required>
+                <select id="grad-year" name="Graduation Year" class="form-select" required>
                   <option value="" disabled selected>Select year</option>
                   <option value="2025">2025</option>
                   <option value="2026">2026</option>
@@ -336,7 +343,7 @@
 
               <div class="form-group form-group--full">
                 <label for="why-join" class="form-label">Why do you want to join Hatter Consulting? <span class="required" aria-hidden="true">*</span></label>
-                <textarea id="why-join" name="why-join" class="form-textarea" rows="4" placeholder="Tell us about your interest in consulting and what you hope to contribute..." required></textarea>
+                <textarea id="why-join" name="Why Join" class="form-textarea" rows="4" placeholder="Tell us about your interest in consulting and what you hope to contribute..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn--green btn--full">Submit Application</button>
