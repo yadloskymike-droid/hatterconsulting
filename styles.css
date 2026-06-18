@@ -196,9 +196,28 @@ ul {
 
 .nav-brand {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+  color: #ffffff;
+  transition: color var(--transition);
+}
+
+.site-header.scrolled .nav-logo {
+  color: var(--green);
+}
+
+.brand-text {
+  display: flex;
   flex-direction: column;
   line-height: 1.1;
-  text-decoration: none;
 }
 
 .brand-name {
