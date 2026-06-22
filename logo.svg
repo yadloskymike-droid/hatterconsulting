@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" role="img" aria-label="Hatter Consulting">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+    </style>
+  </defs>
+
+  <!-- H -->
+  <text x="16" y="218"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="196" font-weight="600"
+    fill="#006747">H</text>
+
+  <!-- Vertical divider -->
+  <line x1="190" y1="18" x2="190" y2="246"
+    stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- C -->
+  <text x="184" y="218"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="196" font-weight="600"
+    fill="#006747">C</text>
+
+  <!-- HATTER CONSULTING wordmark crossing the divider -->
+  <text x="190" y="150"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="16" font-weight="400"
+    fill="#1a1a1a" text-anchor="middle"
+    letter-spacing="7">HATTER CONSULTING</text>
+</svg>
